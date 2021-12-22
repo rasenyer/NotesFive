@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/mSearch"
+        android:icon="@drawable/ic_search"
+        android:title="@string/search_notes"
+        app:actionViewClass="androidx.appcompat.widget.SearchView"
+        app:iconTint="@color/white"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/mDeleteAll"
+        android:icon="@drawable/ic_delete"
+        android:title="@string/delete_all_notes"
+        app:iconTint="@color/white"
+        app:showAsAction="ifRoom"/>
+
+    <group
+        android:checkableBehavior="single">
+
+        <item
+            android:title="@string/sort_by">
+
+            <menu>
+
+                <item
+                    android:id="@+id/mTheNewest"
+                    android:title="@string/the_newest"/>
+                <item
+                    android:id="@+id/mTheOldest"
+                    android:title="@string/the_oldest"/>
+                <item
+                    android:id="@+id/mLessImportant"
+                    android:title="@string/less_important"/>
+                <item
+                    android:id="@+id/mMoreImportant"
+                    android:title="@string/more_important"/>
+
+            </menu>
+
+        </item>
+
+    </group>
+
+</menu>

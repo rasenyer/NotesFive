@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">NotesFive</string>
+    <string name="home">Inicio</string>
+    <string name="add">Agregar</string>
+    <string name="update">Actualizar</string>
+    <string name="sort_by">Ordenar por</string>
+    <string name="the_newest">Lo más nuevo</string>
+    <string name="the_oldest">Lo más viejo</string>
+    <string name="less_important">Menos importante</string>
+    <string name="more_important">Más importante</string>
+    <string name="yes">Sí</string>
+    <string name="no">No</string>
+    <string name="undo">Deshacer</string>
+    <string name="title">Título</string>
+    <string name="description">Descripción</string>
+    <string name="date">Fecha</string>
+    <string name="no_notes">Sin notas</string>
+    <string name="save">Guardar</string>
+    <string name="search_notes">Buscar notas</string>
+    <string name="delete">Eliminar</string>
+    <string name="delete_all_notes">Eliminar todas las notas</string>
+    <string name="are_you_sure_you_want_to_delete_all_notes">¿Estás seguro de que quieres eliminar todas las notas?</string>
+    <string name="are_you_sure_you_want_to_permanently_delete_this_note">¿Estás seguro de que deseas eliminar esta nota de forma permanente?</string>
+    <string name="note_deleted">Nota eliminada</string>
+    <string name="notes_deleted">Notas eliminadas</string>
+    <string name="note_added_successfully">Nota agregada correctamente</string>
+    <string name="note_updated_successfully">Nota actualizada correctamente</string>
+    <string name="please_fill_in_the_fields">¡Por favor complete los campos!</string>
+</resources>

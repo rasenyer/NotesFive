@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragments.UpdateFragment">
+
+    <com.google.android.material.switchmaterial.SwitchMaterial
+        android:id="@+id/mSwitchMaterial"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="@string/less_important"
+        android:textColor="@color/white"
+        android:textAppearance="?attr/textAppearanceSearchResultSubtitle"
+        android:fontFamily="@font/google_sans_bold"
+        android:background="@color/teal_200"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/mSwitchMaterial"
+        android:layout_above="@id/mTextViewDate">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/mRelativeLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/mImageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/ic_launcher_background"
+                    tools:ignore="ContentDescription"/>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/mMaterialCardViewDelete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    app:cardUseCompatPadding="true"
+                    app:cardCornerRadius="20dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:background="@color/purple_500"
+                        android:tint="@color/white"
+                        android:src="@drawable/ic_cancel"
+                        tools:ignore="ContentDescription,UseAppTint"/>
+
+                </com.google.android.material.card.MaterialCardView>
+
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/mEditTextTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginHorizontal="10dp"
+                android:inputType="text"
+                android:textAppearance="?attr/textAppearanceSearchResultTitle"
+                android:fontFamily="@font/google_sans_bold"
+                android:hint="@string/title"
+                android:autofillHints="@string/title"
+                android:background="@android:color/transparent"/>
+
+            <EditText
+                android:id="@+id/mEditTextDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:inputType="textMultiLine"
+                android:textAppearance="?attr/textAppearanceSearchResultSubtitle"
+                android:fontFamily="@font/google_sans_regular"
+                android:hint="@string/description"
+                android:autofillHints="@string/description"
+                android:background="@android:color/transparent"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/mTextViewDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:padding="10dp"
+        android:alpha="0.4"
+        android:textAppearance="?attr/textAppearanceSearchResultSubtitle"
+        android:fontFamily="@font/google_sans_regular"
+        android:textSize="14sp"
+        tools:text="@string/date"/>
+
+</RelativeLayout>
