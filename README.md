@@ -1,7 +1,11 @@
 # NotesFive
 Aplicación de notas, para guardar imágenes y texto, utilizando la librería de persistencia de datos de Room, arquitectura MVVM e inyección de dependencias con Hilt.
+<br>
 
-<h3>Características:</h3>
+<h2>App en Google Play:</h2> 
+https://play.google.com/store/apps/details?id=com.rasenyer.notesfive
+
+<h2>Características:</h2>
 • Guardar nota
 <br>
 • Guardar imagen
@@ -14,7 +18,7 @@ Aplicación de notas, para guardar imágenes y texto, utilizando la librería de
 <br>
 • Eliminar notas
 
-<h3>Librerías usadas:</h3>
+<h2>Librerías usadas:</h2>
 • Hilt
 <br>
 • Room
